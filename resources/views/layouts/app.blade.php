@@ -10,6 +10,8 @@
     <div>
         <form action="{{route('logout')}}" method="post">
             @csrf
+            <a href="{{route('profile')}}">Profile</a>
+            <a href="{{route('password')}}">Update Password</a>
             <a href="{{route('logout')}}" onclick="event.preventDefault();this.closest('form').submit()">Logout</a>
         </form>
     </div>

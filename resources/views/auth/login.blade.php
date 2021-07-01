@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-<h2>Register</h2>
+<h2>Login</h2>
     @if ($errors->any())
         @foreach ($errors->all() as $error)
             {{$error}}
@@ -19,7 +19,7 @@
         <input type="password" name="password" id="password" value="{{old('password')}}" autofocus>
     </div>
     <div>
-        <input type="submit" value="Register">
+        <input type="submit" value="Login">
         <a href="/forgot-password">Forgot Password</a>
      </div>
 </form>
