@@ -28,3 +28,7 @@ Route::middleware(['auth','verified'])->get('/password', function () {
     return view('update_password');
 })->name('password');
 
+
+Route::middleware(['auth','verified'])->get('/two-factor-auth', function () {
+    return view('two-factor-auth');
+})->name('two-factor-auth');

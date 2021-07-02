@@ -13,6 +13,7 @@
             <a href="{{route('dashboard')}}">dashboard</a>
             <a href="{{route('profile')}}">Profile</a>
             <a href="{{route('password')}}">Update Password</a>
+            <a href="{{route('two-factor-auth')}}">Two Factor Auth</a>
             <a href="{{route('logout')}}" onclick="event.preventDefault();this.closest('form').submit()">Logout</a>
         </form>
     </div>

@@ -138,6 +138,7 @@ return [
         Features::updateProfileInformation(),
         Features::updatePasswords(),
         Features::twoFactorAuthentication([
+            //this should enable when use two-factor authentication
             'confirmPassword' => true,
         ]),
     ],
