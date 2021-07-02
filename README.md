@@ -39,7 +39,19 @@ Fortify::loginView(function () {
 change  `views true to false` in `config\fortify.php`
 ```markdown
 'views' => true,
+
+POST => Accept as application/json 
 ```
+
+Copy fortify routes to routes/api.php and cusstomize as you want.
+`vendor\laravel\fortify\routes\routes.php`
+like this:
+```markdown
+  Route::post('/register', [RegisteredUserController::class, 'store'])
+            ->middleware(['guest:'.config('fortify.guard')]);
+```
+
+
 
 
 
