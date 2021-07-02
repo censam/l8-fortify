@@ -35,10 +35,11 @@ Fortify::loginView(function () {
     });
 ```
 
-
-
-
-
+### If Need APP as only API or SPA
+change  `views true to false` in `config\fortify.php`
+```markdown
+'views' => true,
+```
 
 
 
